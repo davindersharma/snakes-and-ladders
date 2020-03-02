@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    width: 600px;
+    height: 600px;
+    background: url('https://www.thermmark.co.uk/wp-content/uploads/2017/01/TMG003-100LF-Snakes-Ladders-1-100-Large-Full-Solid-600x600.png');
+    background-size: cover;
+    padding: 36px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* top: 50%;
+    position: relative;
+    transform: translateY(-50%); */
+}
+
+.box {
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.players {
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.p1,
+.p2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.p1 {
+    background: yellow;
+}
+
+.p2 {
+    background-color: lime;
+}
+
+.dice {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.controls {
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-roll {
+    margin: 20px 0;
+    width: 80px;
+    height: 40px;
+}
